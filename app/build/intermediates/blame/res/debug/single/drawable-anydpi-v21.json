@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility.xml",
+        "source": "/home/rofiqoff/.android/build-cache/3da5763ec7df8670817419f1c4b15066dbc2de7b/output/res/drawable-anydpi-v21/design_ic_visibility.xml"
+    },
+    {
+        "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_favorite.xml",
+        "source": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_favorite.xml"
+    },
+    {
+        "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_favorite_border.xml",
+        "source": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_favorite_border.xml"
+    },
+    {
+        "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility_off.xml",
+        "source": "/home/rofiqoff/.android/build-cache/3da5763ec7df8670817419f1c4b15066dbc2de7b/output/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
+    }
+]

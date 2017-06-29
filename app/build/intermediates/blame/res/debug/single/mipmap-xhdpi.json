@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher_round.png",
+        "source": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    }
+]

@@ -1,0 +1,113 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:2:1-27:12
+	package
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:3:5-58
+		INJECTED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:6:22-76
+application
+ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:8:5-25:19
+MERGED from [com.android.support:design:25.3.1] /home/rofiqoff/.android/build-cache/3da5763ec7df8670817419f1c4b15066dbc2de7b/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/rofiqoff/.android/build-cache/6e84a79c5065b5ac851fa5f89a41d83ca2f4de0b/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/rofiqoff/.android/build-cache/f72f8d0da3bb0ec864e7d494442403c250da567c/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] /home/rofiqoff/.android/build-cache/f933e11d3cda2eec296eaaaa0da9dc98d6895680/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /home/rofiqoff/.android/build-cache/6fcb2af26be712c6710c6034c7701ad205b661ab/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /home/rofiqoff/.android/build-cache/9f7b9edc06879bb83bd69525b5308bfc5772bfa4/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/rofiqoff/.android/build-cache/949f31b77330fbd73c696a2e2d9ff69f6a0cd1a6/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/rofiqoff/.android/build-cache/baaeb2b75926550917a9dc36e4f3152e3c62bf9b/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/rofiqoff/.android/build-cache/5192176adba28dfa3ef905b3297152e7852ba8b6/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/rofiqoff/.android/build-cache/1b909e5e38c3e6a2aa14c60fa0856e2cf64efeb7/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/rofiqoff/.android/build-cache/b7215cda11b6d1faff5f9d0d09a5d5129ed585e1/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/rofiqoff/.android/build-cache/42feb928188b0f7a1e87f88b5168d6de823f956e/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /home/rofiqoff/.android/build-cache/802506c364d8c739740503f1ee7bee7664d2f26f/output/AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:11:9-41
+	android:supportsRtl
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:13:9-35
+	android:roundIcon
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:12:9-54
+	android:allowBackup
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:9:9-35
+	android:icon
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:10:9-43
+	android:theme
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:14:9-40
+activity#apps.popularmovie.rofiqoff.com.popularmovie.activity.MainActivity
+ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:15:9-23:20
+	android:theme
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:17:13-56
+	android:name
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:16:13-50
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:18:13-22:29
+action#android.intent.action.MAIN
+ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:21:27-74
+activity#apps.popularmovie.rofiqoff.com.popularmovie.activity.DetailActivity
+ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:24:9-70
+	android:name
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:24:19-58
+uses-sdk
+INJECTED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:design:25.3.1] /home/rofiqoff/.android/build-cache/3da5763ec7df8670817419f1c4b15066dbc2de7b/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/rofiqoff/.android/build-cache/6e84a79c5065b5ac851fa5f89a41d83ca2f4de0b/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/rofiqoff/.android/build-cache/f72f8d0da3bb0ec864e7d494442403c250da567c/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.1] /home/rofiqoff/.android/build-cache/f933e11d3cda2eec296eaaaa0da9dc98d6895680/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.1] /home/rofiqoff/.android/build-cache/6fcb2af26be712c6710c6034c7701ad205b661ab/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /home/rofiqoff/.android/build-cache/9f7b9edc06879bb83bd69525b5308bfc5772bfa4/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/rofiqoff/.android/build-cache/949f31b77330fbd73c696a2e2d9ff69f6a0cd1a6/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/rofiqoff/.android/build-cache/baaeb2b75926550917a9dc36e4f3152e3c62bf9b/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/rofiqoff/.android/build-cache/5192176adba28dfa3ef905b3297152e7852ba8b6/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/rofiqoff/.android/build-cache/1b909e5e38c3e6a2aa14c60fa0856e2cf64efeb7/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/rofiqoff/.android/build-cache/74bb0f85c47d23813ccc8d90a7661ab1fee1abe8/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/rofiqoff/.android/build-cache/b7215cda11b6d1faff5f9d0d09a5d5129ed585e1/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/rofiqoff/.android/build-cache/42feb928188b0f7a1e87f88b5168d6de823f956e/output/AndroidManifest.xml:20:5-43
+MERGED from [com.jakewharton:butterknife:8.6.0] /home/rofiqoff/.android/build-cache/e750fdb5f4a6f03d54888fe7b10cc6ff200d6272/output/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-compat:25.3.1] /home/rofiqoff/.android/build-cache/802506c364d8c739740503f1ee7bee7664d2f26f/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] /home/rofiqoff/.android/build-cache/3da5763ec7df8670817419f1c4b15066dbc2de7b/output/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] /home/rofiqoff/.android/build-cache/3da5763ec7df8670817419f1c4b15066dbc2de7b/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/rofiqoff/.android/build-cache/6e84a79c5065b5ac851fa5f89a41d83ca2f4de0b/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/rofiqoff/.android/build-cache/f72f8d0da3bb0ec864e7d494442403c250da567c/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] /home/rofiqoff/.android/build-cache/f933e11d3cda2eec296eaaaa0da9dc98d6895680/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] /home/rofiqoff/.android/build-cache/6fcb2af26be712c6710c6034c7701ad205b661ab/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /home/rofiqoff/.android/build-cache/9f7b9edc06879bb83bd69525b5308bfc5772bfa4/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/rofiqoff/.android/build-cache/949f31b77330fbd73c696a2e2d9ff69f6a0cd1a6/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/rofiqoff/.android/build-cache/baaeb2b75926550917a9dc36e4f3152e3c62bf9b/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/rofiqoff/.android/build-cache/5192176adba28dfa3ef905b3297152e7852ba8b6/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/rofiqoff/.android/build-cache/74bb0f85c47d23813ccc8d90a7661ab1fee1abe8/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/rofiqoff/.android/build-cache/b7215cda11b6d1faff5f9d0d09a5d5129ed585e1/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/rofiqoff/.android/build-cache/42feb928188b0f7a1e87f88b5168d6de823f956e/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] /home/rofiqoff/.android/build-cache/802506c364d8c739740503f1ee7bee7664d2f26f/output/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] /home/rofiqoff/.android/build-cache/3da5763ec7df8670817419f1c4b15066dbc2de7b/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] /home/rofiqoff/.android/build-cache/3da5763ec7df8670817419f1c4b15066dbc2de7b/output/AndroidManifest.xml:26:9-47
