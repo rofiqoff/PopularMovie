@@ -104,4 +104,6 @@
     <string name="image_backdrop_movie">Image Backdrop Movie</string>
     <string name="image_play">Image Play</string>
     <string name="text_author">Author</string>
+    <string name="action_scroll_to_top">Scroll To Top</string>
+    <string name="action_about">About</string>
 </resources>

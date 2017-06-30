@@ -15,15 +15,18 @@ import android.widget.Spinner;
 
 import apps.popularmovie.rofiqoff.com.popularmovie.R;
 import apps.popularmovie.rofiqoff.com.popularmovie.adapter.SpinAdapter;
-import apps.popularmovie.rofiqoff.com.popularmovie.fragment.PopularMovieFragment;
-import apps.popularmovie.rofiqoff.com.popularmovie.fragment.TopRatedFragment;
+import apps.popularmovie.rofiqoff.com.popularmovie.fragment.MovieFragment;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.toolbar) Toolbar toolbar;
-    @BindView(R.id.spinner) Spinner spinner;
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
+    @BindView(R.id.spinner)
+    Spinner spinner;
+
+    MovieFragment mMovieFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,31 +49,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-                Fragment fragment = null;
+                Fragment fragment = new MovieFragment();
                 Class fragmentClass = null;
 
-//                fragment = new PopularMovieFragment();
+                Bundle bundle = new Bundle();
 
-                switch (position){
+                switch (position) {
                     case 0:
-                        fragment = new PopularMovieFragment();
-//                        Intent intent0 = new Intent(MainActivity.this, fragment.getFragmentManager().getClass());
-//                        Bundle bundle = new Bundle();
-//                        bundle.putString("movie_kind", "popular");
-//                        startActivity(intent0);
+                        bundle.putString("movie_kind", "popular");
+                        fragment.setArguments(bundle);
                         break;
                     case 1:
-                        fragment = new TopRatedFragment();
-//                        fragment = new PopularMovieFragment();
-//                        Intent intent1 = new Intent(MainActivity.this, fragment.getFragmentManager().getClass());
-//                        intent1.putExtra("movie_kind", "top_rated");
-//                        startActivity(intent1);
-                        break;
-                    default:
-                        fragment = new PopularMovieFragment();
-//                        Intent intent = new Intent(MainActivity.this, fragment.getFragmentManager().getClass());
-//                        intent.putExtra("movie_kind", "popular");
-//                        startActivity(intent);
+                        bundle.putString("movie_kind", "top_rated");
+                        fragment.setArguments(bundle);
                         break;
                 }
 
@@ -108,7 +99,13 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_scroll_to_top) {
+//            mMovieFragment.scrollToTop(true);
+            return true;
+
+        } else if (id == R.id.action_settings) {
+            return true;
+        } else if (id == R.id.action_about) {
             return true;
         }
 

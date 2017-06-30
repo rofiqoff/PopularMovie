@@ -19,29 +19,36 @@
                     "startLine": 3,
                     "startColumn": 4,
                     "startOffset": 113,
-                    "endColumn": 128,
-                    "endOffset": 237
+                    "endColumn": 46,
+                    "endOffset": 155
                 },
                 "from": {
-                    "file": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/res/values-w820dp/strings.xml"
+                    "file": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/res/values-w820dp/strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 646,
+                        "endColumn": 46,
+                        "endOffset": 688
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 242,
-                    "endColumn": 69,
-                    "endOffset": 307
+                    "startOffset": 160,
+                    "endColumn": 62,
+                    "endOffset": 218
                 },
                 "from": {
                     "file": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/res/values-w820dp/strings.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 253,
-                        "endColumn": 69,
-                        "endOffset": 318
+                        "startOffset": 583,
+                        "endColumn": 62,
+                        "endOffset": 641
                     }
                 }
             },
@@ -49,18 +56,18 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 312,
-                    "endColumn": 49,
-                    "endOffset": 357
+                    "startOffset": 223,
+                    "endColumn": 155,
+                    "endOffset": 374
                 },
                 "from": {
                     "file": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/res/values-w820dp/strings.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 323,
-                        "endColumn": 49,
-                        "endOffset": 368
+                        "startOffset": 191,
+                        "endColumn": 155,
+                        "endOffset": 342
                     }
                 }
             },
@@ -68,9 +75,9 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 362,
-                    "endColumn": 68,
-                    "endOffset": 426
+                    "startOffset": 379,
+                    "endColumn": 69,
+                    "endOffset": 444
                 },
                 "from": {
                     "file": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/res/values-w820dp/strings.xml"
@@ -80,19 +87,36 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 431,
-                    "endColumn": 46,
-                    "endOffset": 473
+                    "startOffset": 449,
+                    "endColumn": 49,
+                    "endOffset": 494
                 },
                 "from": {
-                    "file": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/res/values-w820dp/strings.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 373,
-                        "endColumn": 46,
-                        "endOffset": 415
-                    }
+                    "file": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/res/values-w820dp/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 499,
+                    "endColumn": 68,
+                    "endOffset": 563
+                },
+                "from": {
+                    "file": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/res/values-w820dp/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 568,
+                    "endColumn": 46,
+                    "endOffset": 610
+                },
+                "from": {
+                    "file": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/res/values-w820dp/strings.xml"
                 }
             }
         ]

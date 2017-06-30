@@ -15,10 +15,10 @@ import java.lang.IllegalStateException;
 import java.lang.Override;
 
 public class PopularMovieFragment_ViewBinding implements Unbinder {
-  private PopularMovieFragment target;
+  private MovieFragment target;
 
   @UiThread
-  public PopularMovieFragment_ViewBinding(PopularMovieFragment target, View source) {
+  public PopularMovieFragment_ViewBinding(MovieFragment target, View source) {
     this.target = target;
 
     target.mRecyclerView = Utils.findRequiredViewAsType(source, R.id.rv_movie_popular, "field 'mRecyclerView'", RecyclerView.class);
@@ -30,7 +30,7 @@ public class PopularMovieFragment_ViewBinding implements Unbinder {
   @Override
   @CallSuper
   public void unbind() {
-    PopularMovieFragment target = this.target;
+    MovieFragment target = this.target;
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 

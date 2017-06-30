@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="apps.popularmovie.rofiqoff.com.popularmovie.fragment.TopRatedFragment">
+    tools:context="apps.popularmovie.rofiqoff.com.popularmovie.fragment.MovieFragment">
 
     <RelativeLayout
         android:id="@+id/layout_connection_error"
@@ -26,7 +26,7 @@
         android:layout_height="match_parent">
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_movie_top_rated"
+            android:id="@+id/rv_movie"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/white"/>

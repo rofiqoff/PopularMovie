@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="activity_horizontal_margin">64dp</dimen>
-    <string name="error_message_connection">Maaf, Sambungan internet anda bermasalah \n Periksa sambungan internet anda</string>
+    <string name="action_about">About</string>
+    <string name="action_scroll_to_top">Scroll To Top</string>
+    <string name="error_message_connection">Sorry, there is a problem with your internet connection. \nMake sure you are connected to the internet</string>
     <string name="image_backdrop_movie">Image Backdrop Movie</string>
     <string name="image_play">Image Play</string>
     <string name="movie_image_error_connection">Image Error</string>
