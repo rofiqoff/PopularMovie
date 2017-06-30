@@ -6,5 +6,9 @@
     {
         "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_favorite_border.png",
         "source": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/generated/res/pngs/debug/drawable-ldpi/ic_favorite_border.png"
+    },
+    {
+        "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/drawable-ldpi/ic_play_circle_outline.png",
+        "source": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/generated/res/pngs/debug/drawable-ldpi/ic_play_circle_outline.png"
     }
 ]

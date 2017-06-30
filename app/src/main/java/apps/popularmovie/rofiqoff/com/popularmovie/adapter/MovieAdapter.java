@@ -45,6 +45,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
 
         Picasso.with(activity)
                 .load(ImageUtils.buildPostUrl(movie.get(position).getPoster_path(), holder.mItemMovieImage.getWidth()))
+                .placeholder(R.color.movie_poster_placeholder)
                 .into(holder.mItemMovieImage);
         holder.mTitleMovieTextView.setText(movie.get(position).getTitle());
 

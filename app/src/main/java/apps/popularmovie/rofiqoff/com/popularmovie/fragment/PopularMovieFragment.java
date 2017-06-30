@@ -5,9 +5,9 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,14 +29,12 @@ import retrofit2.Response;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class PopularMovieFragment extends Fragment {
+public class PopularMovieFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
 
-    @BindView(R.id.rv_movie_popular)
-    RecyclerView mRecyclerView;
-    @BindView(R.id.pb_load_movie)
-    ProgressBar mProgresBar;
-    @BindView(R.id.layout_connection_error)
-    RelativeLayout mErrorLayout;
+    @BindView(R.id.rv_movie_popular) RecyclerView mRecyclerView;
+    @BindView(R.id.pb_load_movie) ProgressBar mProgresBar;
+    @BindView(R.id.layout_connection_error) RelativeLayout mErrorLayout;
+    @BindView(R.id.swipe_refresh_item) SwipeRefreshLayout mRefresh;
 
     MovieAdapter mAdapter;
     APIService apiService;
@@ -63,17 +61,9 @@ public class PopularMovieFragment extends Fragment {
         mAdapter = new MovieAdapter(getActivity(), movies);
         mRecyclerView.setAdapter(mAdapter);
 
-        if (isNetworkConnected()) {
-            mProgresBar.setVisibility(View.VISIBLE);
-            mRecyclerView.setVisibility(View.GONE);
-            mErrorLayout.setVisibility(View.GONE);
+        mRefresh.setOnRefreshListener(this);
 
-            loadMovie();
-        } else {
-            mProgresBar.setVisibility(View.GONE);
-            mRecyclerView.setVisibility(View.GONE);
-            mErrorLayout.setVisibility(View.VISIBLE);
-        }
+        loadMovie();
 
         return view;
     }
@@ -81,8 +71,11 @@ public class PopularMovieFragment extends Fragment {
     private void loadMovie() {
 
         intent = getActivity().getIntent();
-
         String sKind = intent.getStringExtra("movie_kind");
+
+        mProgresBar.setVisibility(View.VISIBLE);
+        mRecyclerView.setVisibility(View.GONE);
+        mErrorLayout.setVisibility(View.GONE);
 
 //        if (sKind.equals("popular")){
 
@@ -103,7 +96,7 @@ public class PopularMovieFragment extends Fragment {
 
             @Override
             public void onFailure(Call<MovieModel> call, Throwable t) {
-                Log.d("Error", t.getMessage());
+//                Log.d("Error", t.getMessage());
 
                 mProgresBar.setVisibility(View.GONE);
                 mRecyclerView.setVisibility(View.GONE);
@@ -130,6 +123,17 @@ public class PopularMovieFragment extends Fragment {
 //                }
 //            });
 //        }
+    }
+
+    @Override
+    public void onRefresh() {
+        loadMovie();
+
+        mProgresBar.setVisibility(View.VISIBLE);
+        mRecyclerView.setVisibility(View.GONE);
+        mErrorLayout.setVisibility(View.GONE);
+        mRefresh.setRefreshing(false);
+
     }
 
     public boolean isNetworkConnected() {

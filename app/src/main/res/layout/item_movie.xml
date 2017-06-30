@@ -5,13 +5,13 @@
     android:id="@+id/movie_item_container"
     style="@style/MovieItem"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:layout_margin="@dimen/item_spacing_full">
+    android:layout_height="wrap_content">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:minHeight="50dp">
 
         <ImageView
             android:id="@+id/img_item_movie"
@@ -21,21 +21,21 @@
             android:contentDescription="@string/movie_image_desc"
             android:scaleType="centerCrop"
             android:src="@color/movie_poster_placeholder"
-            tools:layout_width="300dp"
+            android:layout_weight="1"
             tools:src="@drawable/image_placeholder" />
 
         <LinearLayout
             android:id="@+id/movie_item_footer"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="60dp"
             android:background="@color/colorPrimary"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/keyline_1"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/keyline_1_minus_8dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 

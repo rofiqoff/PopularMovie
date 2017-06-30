@@ -2,5 +2,8 @@
 <resources>
     <dimen name="activity_horizontal_margin">64dp</dimen>
     <string name="error_message_connection">Maaf, Sambungan internet anda bermasalah \n Periksa sambungan internet anda</string>
+    <string name="image_backdrop_movie">Image Backdrop Movie</string>
+    <string name="image_play">Image Play</string>
     <string name="movie_image_error_connection">Image Error</string>
+    <string name="text_author">Author</string>
 </resources>

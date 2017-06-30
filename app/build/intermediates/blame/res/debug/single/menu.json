@@ -2,5 +2,9 @@
     {
         "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
         "source": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/res/menu/menu_main.xml"
+    },
+    {
+        "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/menu/menu_detail.xml",
+        "source": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/res/menu/menu_detail.xml"
     }
 ]

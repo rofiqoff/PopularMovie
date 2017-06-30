@@ -4,9 +4,9 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,14 +28,12 @@ import retrofit2.Response;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class TopRatedFragment extends Fragment {
+public class TopRatedFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
 
-    @BindView(R.id.rv_movie_top_rated)
-    RecyclerView mRecyclerView;
-    @BindView(R.id.pb_load_movie)
-    ProgressBar mProgressBar;
-    @BindView(R.id.layout_connection_error)
-    RelativeLayout mErrorLayout;
+    @BindView(R.id.rv_movie_top_rated) RecyclerView mRecyclerView;
+    @BindView(R.id.pb_load_movie) ProgressBar mProgressBar;
+    @BindView(R.id.layout_connection_error) RelativeLayout mErrorLayout;
+    @BindView(R.id.swipe_refresh_item) SwipeRefreshLayout mRefresh;
 
     MovieAdapter mAdapter;
     APIService apiService;
@@ -61,23 +59,18 @@ public class TopRatedFragment extends Fragment {
         mAdapter = new MovieAdapter(getActivity(), movies);
         mRecyclerView.setAdapter(mAdapter);
 
-        if (isNetworkConnected()) {
-            mProgressBar.setVisibility(View.VISIBLE);
-            mRecyclerView.setVisibility(View.GONE);
-            mErrorLayout.setVisibility(View.GONE);
+        mRefresh.setOnRefreshListener(this);
 
-            loadMovie();
-        } else {
-            mProgressBar.setVisibility(View.GONE);
-            mRecyclerView.setVisibility(View.GONE);
-            mErrorLayout.setVisibility(View.VISIBLE);
-        }
+        loadMovie();
 
         return view;
     }
 
     private void loadMovie() {
 
+        mProgressBar.setVisibility(View.VISIBLE);
+        mRecyclerView.setVisibility(View.GONE);
+        mErrorLayout.setVisibility(View.GONE);
 
         Call<MovieModel> listMovie = apiService.getTopRatedMovie();
         listMovie.enqueue(new Callback<MovieModel>() {
@@ -96,7 +89,7 @@ public class TopRatedFragment extends Fragment {
 
             @Override
             public void onFailure(Call<MovieModel> call, Throwable t) {
-                Log.d("Error", t.getMessage());
+//                Log.d("Error", t.getMessage());
 
                 mProgressBar.setVisibility(View.GONE);
                 mRecyclerView.setVisibility(View.GONE);
@@ -104,6 +97,16 @@ public class TopRatedFragment extends Fragment {
             }
         });
 
+    }
+
+    @Override
+    public void onRefresh() {
+        loadMovie();
+
+        mProgressBar.setVisibility(View.VISIBLE);
+        mRecyclerView.setVisibility(View.GONE);
+        mErrorLayout.setVisibility(View.GONE);
+        mRefresh.setRefreshing(false);
     }
 
     public boolean isNetworkConnected() {

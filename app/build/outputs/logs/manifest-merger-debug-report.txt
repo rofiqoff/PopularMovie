@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:2:1-27:12
+ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:3:5-58
 		INJECTED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml
@@ -22,7 +22,7 @@ ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/Androi
 	android:name
 		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:6:22-76
 application
-ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:8:5-25:19
+ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:8:5-33:19
 MERGED from [com.android.support:design:25.3.1] /home/rofiqoff/.android/build-cache/3da5763ec7df8670817419f1c4b15066dbc2de7b/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] /home/rofiqoff/.android/build-cache/6e84a79c5065b5ac851fa5f89a41d83ca2f4de0b/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/rofiqoff/.android/build-cache/f72f8d0da3bb0ec864e7d494442403c250da567c/output/AndroidManifest.xml:26:5-20
@@ -65,9 +65,21 @@ ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/Androi
 	android:name
 		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:21:27-74
 activity#apps.popularmovie.rofiqoff.com.popularmovie.activity.DetailActivity
-ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:24:9-70
+ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:24:9-32:20
+	android:label
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:26:13-58
+	android:parentActivityName
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:27:13-64
+	android:theme
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:28:13-56
 	android:name
-		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:24:19-58
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:25:13-52
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:29:13-31:101
+	android:value
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:31:17-98
+	android:name
+		ADDED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml:30:17-63
 uses-sdk
 INJECTED from /home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.3.1] /home/rofiqoff/.android/build-cache/3da5763ec7df8670817419f1c4b15066dbc2de7b/output/AndroidManifest.xml:21:5-23:62

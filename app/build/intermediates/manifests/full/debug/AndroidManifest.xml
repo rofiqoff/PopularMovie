@@ -31,7 +31,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="apps.popularmovie.rofiqoff.com.popularmovie.activity.DetailActivity" />
+        <activity
+            android:name="apps.popularmovie.rofiqoff.com.popularmovie.activity.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName="apps.popularmovie.rofiqoff.com.popularmovie.activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="apps.popularmovie.rofiqoff.com.popularmovie.activity.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

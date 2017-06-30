@@ -32,6 +32,10 @@
         "source": "/home/rofiqoff/.android/build-cache/6e84a79c5065b5ac851fa5f89a41d83ca2f4de0b/output/res/layout/abc_list_menu_item_icon.xml"
     },
     {
+        "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/layout/item_movie_description_detail.xml",
+        "source": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/res/layout/item_movie_description_detail.xml"
+    },
+    {
         "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/layout/notification_template_custom_big.xml",
         "source": "/home/rofiqoff/.android/build-cache/6e84a79c5065b5ac851fa5f89a41d83ca2f4de0b/output/res/layout/notification_template_custom_big.xml"
     },
@@ -44,12 +48,12 @@
         "source": "/home/rofiqoff/.android/build-cache/6e84a79c5065b5ac851fa5f89a41d83ca2f4de0b/output/res/layout/notification_action_tombstone.xml"
     },
     {
-        "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/home/rofiqoff/.android/build-cache/6e84a79c5065b5ac851fa5f89a41d83ca2f4de0b/output/res/layout/abc_activity_chooser_view_list_item.xml"
-    },
-    {
         "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
         "source": "/home/rofiqoff/.android/build-cache/6e84a79c5065b5ac851fa5f89a41d83ca2f4de0b/output/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/home/rofiqoff/.android/build-cache/6e84a79c5065b5ac851fa5f89a41d83ca2f4de0b/output/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
@@ -98,6 +102,10 @@
     {
         "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
         "source": "/home/rofiqoff/.android/build-cache/6e84a79c5065b5ac851fa5f89a41d83ca2f4de0b/output/res/layout/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/layout/content_detail.xml",
+        "source": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/res/layout/content_detail.xml"
     },
     {
         "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
