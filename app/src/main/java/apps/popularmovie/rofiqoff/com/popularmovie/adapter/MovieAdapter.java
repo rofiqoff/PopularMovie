@@ -1,6 +1,7 @@
 package apps.popularmovie.rofiqoff.com.popularmovie.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,7 +15,10 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 import apps.popularmovie.rofiqoff.com.popularmovie.R;
+import apps.popularmovie.rofiqoff.com.popularmovie.activity.DetailActivity;
+import apps.popularmovie.rofiqoff.com.popularmovie.model.MovieDetailModel;
 import apps.popularmovie.rofiqoff.com.popularmovie.model.MovieModel;
+import apps.popularmovie.rofiqoff.com.popularmovie.service.APIService;
 import apps.popularmovie.rofiqoff.com.popularmovie.utils.ImageUtils;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -25,11 +29,19 @@ import butterknife.ButterKnife;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {
 
-    private String[] movieData;
+    APIService apiService;
+
     private Activity activity;
     private List<MovieModel.DataMovie> movie;
+    private List<MovieDetailModel.GenresData> genres;
 
-    public MovieAdapter(Activity activity, List<MovieModel.DataMovie> movie){
+    public MovieAdapter(Activity activity, List<MovieModel.DataMovie> movie, List<MovieDetailModel.GenresData> genres) {
+        this.activity = activity;
+        this.movie = movie;
+        this.genres = genres;
+    }
+
+    public MovieAdapter(Activity activity, List<MovieModel.DataMovie> movie) {
         this.activity = activity;
         this.movie = movie;
     }
@@ -41,19 +53,18 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
     }
 
     @Override
-    public void onBindViewHolder(MovieViewHolder holder, int position) {
+    public void onBindViewHolder(final MovieViewHolder holder, final int position) {
 
         Picasso.with(activity)
                 .load(ImageUtils.buildPostUrl(movie.get(position).getPoster_path(), holder.mItemMovieImage.getWidth()))
                 .placeholder(R.color.movie_poster_placeholder)
                 .into(holder.mItemMovieImage);
         holder.mTitleMovieTextView.setText(movie.get(position).getTitle());
-
+        holder.mGenreMovieTextView.setVisibility(View.GONE);
     }
 
     @Override
     public int getItemCount() {
-
         return movie.size();
     }
 
@@ -65,7 +76,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
         @BindView(R.id.movie_item_btn_favorite) ImageButton mButtonFavorite;
         @BindView(R.id.movie_item_container) View container;
 
-        public MovieViewHolder(View view){
+        public MovieViewHolder(View view) {
             super(view);
             ButterKnife.bind(this, view);
 
@@ -74,10 +85,17 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
 
         @Override
         public void onClick(View v) {
+            int iPosition = getAdapterPosition();
+            String id = String.valueOf(movie.get(iPosition).getId());
+            System.out.println("ID : "+id);
+
+            Intent intent = new Intent(activity, DetailActivity.class);
+            intent.putExtra("id", id);
+
+            activity.startActivity(intent);
 
         }
     }
-
 
 
 }

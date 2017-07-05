@@ -21,10 +21,8 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.toolbar)
-    Toolbar toolbar;
-    @BindView(R.id.spinner)
-    Spinner spinner;
+    @BindView(R.id.toolbar) Toolbar toolbar;
+    @BindView(R.id.spinner) Spinner spinner;
 
     MovieFragment mMovieFragment;
 

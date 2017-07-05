@@ -23,7 +23,7 @@ public class MovieFragment_ViewBinding implements Unbinder {
 
     target.mRecyclerView = Utils.findRequiredViewAsType(source, R.id.rv_movie, "field 'mRecyclerView'", RecyclerView.class);
     target.mProgresBar = Utils.findRequiredViewAsType(source, R.id.pb_load_movie, "field 'mProgresBar'", ProgressBar.class);
-    target.mErrorLayout = Utils.findRequiredViewAsType(source, R.id.layout_connection_error, "field 'mErrorLayout'", RelativeLayout.class);
+    target.mErrorLayout = Utils.findRequiredViewAsType(source, R.id.layout_error, "field 'mErrorLayout'", RelativeLayout.class);
     target.mRefresh = Utils.findRequiredViewAsType(source, R.id.swipe_refresh_item, "field 'mRefresh'", SwipeRefreshLayout.class);
   }
 

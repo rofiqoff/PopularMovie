@@ -17,6 +17,7 @@ import java.util.ArrayList;
 
 import apps.popularmovie.rofiqoff.com.popularmovie.R;
 import apps.popularmovie.rofiqoff.com.popularmovie.adapter.MovieAdapter;
+import apps.popularmovie.rofiqoff.com.popularmovie.model.MovieDetailModel;
 import apps.popularmovie.rofiqoff.com.popularmovie.model.MovieModel;
 import apps.popularmovie.rofiqoff.com.popularmovie.service.APIService;
 import butterknife.BindView;
@@ -32,12 +33,13 @@ public class MovieFragment extends Fragment implements SwipeRefreshLayout.OnRefr
 
     @BindView(R.id.rv_movie) RecyclerView mRecyclerView;
     @BindView(R.id.pb_load_movie) ProgressBar mProgresBar;
-    @BindView(R.id.layout_connection_error) RelativeLayout mErrorLayout;
+    @BindView(R.id.layout_error) RelativeLayout mErrorLayout;
     @BindView(R.id.swipe_refresh_item) SwipeRefreshLayout mRefresh;
 
     MovieAdapter mAdapter;
     APIService apiService;
     ArrayList<MovieModel.DataMovie> movies = new ArrayList<>();
+    ArrayList<MovieDetailModel.GenresData> genres = new ArrayList<>();
 
     public MovieFragment() {
         // Required empty public constructor
@@ -103,7 +105,7 @@ public class MovieFragment extends Fragment implements SwipeRefreshLayout.OnRefr
 
         } else if (sKind.equals("top_rated")) {
 
-            System.out.println("Pilihan : "+sKind);
+            System.out.println("Pilihan : " + sKind);
 
             mProgresBar.setVisibility(View.VISIBLE);
             mRecyclerView.setVisibility(View.GONE);

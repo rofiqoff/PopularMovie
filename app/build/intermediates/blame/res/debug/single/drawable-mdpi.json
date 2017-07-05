@@ -12,6 +12,10 @@
         "source": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/res/drawable-mdpi/egg_empaty.png"
     },
     {
+        "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_play_arrow.png",
+        "source": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/generated/res/pngs/debug/drawable-mdpi/ic_play_arrow.png"
+    },
+    {
         "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_favorite_border.png",
         "source": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/generated/res/pngs/debug/drawable-mdpi/ic_favorite_border.png"
     }

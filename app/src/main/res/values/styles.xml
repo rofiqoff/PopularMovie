@@ -28,4 +28,9 @@
         <item name="android:foreground">?android:attr/selectableItemBackground</item>
     </style>
 
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#cfcece</item>
+        <item name="colorControlActivated">@color/material_yellow600</item>
+    </style>
+
 </resources>

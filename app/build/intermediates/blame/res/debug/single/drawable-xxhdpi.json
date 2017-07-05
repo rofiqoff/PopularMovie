@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_play_arrow.png",
+        "source": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_play_arrow.png"
+    },
+    {
         "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/egg_empaty.png",
         "source": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/res/drawable-xxhdpi/egg_empaty.png"
     },

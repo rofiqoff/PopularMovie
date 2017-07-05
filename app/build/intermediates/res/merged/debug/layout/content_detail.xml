@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_detail_movie"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -9,35 +10,200 @@
     tools:showIn="@layout/activity_detail">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        android:layout_marginTop="8dp">
-
-        <ImageView
-            android:id="@+id/image_detail"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:scaleType="fitXY"
-            tools:src="@drawable/image_placeholder"
-            android:contentDescription="@string/movie_image_desc"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp">
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="8dp">
 
-            <TextView
+            <ImageView
+                android:id="@+id/image_detail"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:contentDescription="@string/movie_image_desc"
+                android:scaleType="fitXY"
+                tools:src="@drawable/image_placeholder" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_tittle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/keyline_1"
+                    android:gravity="start|top"
+                    android:textColor="@color/body_text_1"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:text="Beauty and The Beast" />
+
+                <TextView
+                    android:id="@+id/text_countries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="start"
+                    tools:text="United States of America" />
+
+                <TextView
+                    android:id="@+id/text_genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="start"
+                    tools:text="Action, Adventure, Fantasy, Science Fiction" />
+
+                <TextView
+                    android:id="@+id/text_home_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:autoLink="web"
+                    android:gravity="start"
+                    android:linksClickable="true"
+                    android:textStyle="bold"
+                    tools:text="www.google.com" />
+
+                <TextView
+                    android:id="@+id/text_released"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    tools:text="Released" />
+
+                <TextView
+                    android:id="@+id/text_released_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    tools:text="2000-01-01" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/keyline_1_minus_8dp"
+                android:layout_marginLeft="@dimen/keyline_1_minus_8dp"
+                android:layout_marginRight="@dimen/keyline_1_minus_8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_company_production"
+                    android:textColor="@color/body_text_1"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_companies_production"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Dune Entertainment, Atlas Entertainmen, Warner Bros, DC Entertainment, Cruel and Unusual Films, TENCENT PICTURES, Wanda Pictures " />
+
+            </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/ratingbar_movie"
+                style="?android:attr/ratingBarStyleIndicator"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_author"
-                android:textSize="18sp"/>
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:clickable="false"
+                android:numStars="10"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:stepSize="0.1"
+                tools:rating="5"
+                app:theme="@style/RatingBar"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dadada" />
+
+            <TextView
+                android:id="@+id/text_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/keyline_1_minus_8dp"
+                android:layout_marginLeft="@dimen/keyline_1_minus_8dp"
+                android:layout_marginRight="@dimen/keyline_1_minus_8dp"
+                android:layout_marginTop="@dimen/keyline_1_minus_8dp"
+                android:textColor="@color/body_text_1"
+                tools:text="An Amazon princess comes to the world of Man to become the greatest of the female superheroes." />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dadada" />
+
+            <TextView
+                android:id="@+id/review_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/keyline_1_minus_8dp"
+                android:text="@string/text_review_title"
+                android:textColor="@color/body_text_1"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/keyline_1_minus_8dp"
+                android:layout_marginRight="@dimen/keyline_1_minus_8dp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dadada" />
+
+            <TextView
+                android:id="@+id/trailer_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/keyline_1_minus_8dp"
+                android:text="@string/text_trailer"
+                android:textColor="@color/body_text_1"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_trailer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/keyline_1_minus_8dp"
+                android:layout_marginRight="@dimen/keyline_1_minus_8dp"
+                android:visibility="gone" />
 
         </LinearLayout>
 
     </LinearLayout>
-
-</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

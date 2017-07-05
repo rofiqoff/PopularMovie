@@ -1,5 +1,6 @@
 package apps.popularmovie.rofiqoff.com.popularmovie.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -48,7 +49,7 @@ public class MovieModel {
     public static class DataMovie{
 
         private String vote_count;
-        private String id;
+        private int id;
         private String video;
         private String vote_average;
         private String title;
@@ -56,7 +57,7 @@ public class MovieModel {
         private String poster_path;
         private String original_language;
         private String original_title;
-        private String genre_ids[];
+        private ArrayList<String> genre_ids;
         private String backdrop_path;
         private String adult;
         private String overview;
@@ -70,11 +71,11 @@ public class MovieModel {
             this.vote_count = vote_count;
         }
 
-        public String getId() {
+        public int getId() {
             return id;
         }
 
-        public void setId(String id) {
+        public void setId(int id) {
             this.id = id;
         }
 
@@ -134,11 +135,11 @@ public class MovieModel {
             this.original_title = original_title;
         }
 
-        public String[] getGenre_ids() {
+        public ArrayList<String> getGenre_ids() {
             return genre_ids;
         }
 
-        public void setGenre_ids(String[] genre_ids) {
+        public void setGenre_ids(ArrayList<String> genre_ids) {
             this.genre_ids = genre_ids;
         }
 
