@@ -8,8 +8,8 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.RatingBar;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import apps.popularmovie.rofiqoff.com.popularmovie.R;
 import butterknife.Unbinder;
@@ -29,7 +29,7 @@ public class DetailActivity_ViewBinding implements Unbinder {
   public DetailActivity_ViewBinding(DetailActivity target, View source) {
     this.target = target;
 
-    target.mErrorLayout = Utils.findRequiredViewAsType(source, R.id.layout_error, "field 'mErrorLayout'", RelativeLayout.class);
+    target.mLoadContent = Utils.findRequiredViewAsType(source, R.id.pb_load_detail, "field 'mLoadContent'", ProgressBar.class);
     target.mContentDetailMovie = Utils.findRequiredViewAsType(source, R.id.content_detail_movie, "field 'mContentDetailMovie'", NestedScrollView.class);
     target.toolbar = Utils.findRequiredViewAsType(source, R.id.toolbar_detail, "field 'toolbar'", Toolbar.class);
     target.mBackdropMovie = Utils.findRequiredViewAsType(source, R.id.image_backdrop_movie, "field 'mBackdropMovie'", ImageView.class);
@@ -57,7 +57,7 @@ public class DetailActivity_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
-    target.mErrorLayout = null;
+    target.mLoadContent = null;
     target.mContentDetailMovie = null;
     target.toolbar = null;
     target.mBackdropMovie = null;

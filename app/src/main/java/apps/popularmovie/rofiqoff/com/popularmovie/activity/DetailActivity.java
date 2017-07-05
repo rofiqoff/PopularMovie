@@ -9,13 +9,15 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.RatingBar;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import apps.popularmovie.rofiqoff.com.popularmovie.R;
 import apps.popularmovie.rofiqoff.com.popularmovie.adapter.ReviewAdapter;
@@ -33,7 +35,7 @@ import retrofit2.Response;
 
 public class DetailActivity extends AppCompatActivity {
 
-    @BindView(R.id.layout_error) RelativeLayout mErrorLayout;
+    @BindView(R.id.pb_load_detail) ProgressBar mLoadContent;
     @BindView(R.id.content_detail_movie) NestedScrollView mContentDetailMovie;
     @BindView(R.id.toolbar_detail) Toolbar toolbar;
     @BindView(R.id.image_backdrop_movie) ImageView mBackdropMovie;
@@ -94,7 +96,7 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     public void loadDetailMovie(final int movie_id) {
-        mErrorLayout.setVisibility(View.GONE);
+        mLoadContent.setVisibility(View.VISIBLE);
         mContentDetailMovie.setVisibility(View.GONE);
 
         Call<MovieDetailModel> getDetailMovie = apiService.getDetailMovie(movie_id);
@@ -102,8 +104,9 @@ public class DetailActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<MovieDetailModel> call, final Response<MovieDetailModel> response) {
 
-                mErrorLayout.setVisibility(View.GONE);
+                mLoadContent.setVisibility(View.GONE);
                 mContentDetailMovie.setVisibility(View.VISIBLE);
+
 
                 Picasso.with(DetailActivity.this)
                         .load(ImageUtils.buildPostUrl(response.body().getBackdrop_path(), mBackdropMovie.getWidth()))
@@ -123,33 +126,51 @@ public class DetailActivity extends AppCompatActivity {
 
                 mTitle.setText(response.body().getOriginal_title());
 
-//                List<MovieDetailModel.ProductionCountriesData> countries = new ArrayList<>(response.body().getProduction_countries());
-//                String[] countriesName = new String[countries.size()];
-//                for (int i = 0; i <= countries.size(); i++){
-//                    countriesName[i] =
-//                            countries.
-//                                    get(i).
-//                                    getName();
-//                    mCountries.setText(countries.get(i+1).getName());
-//                }
+                List<MovieDetailModel.ProductionCountriesData> countries = new ArrayList<>(response.body().getProduction_countries());
+                String[] countriesName = new String[countries.size()];
+                for (int i = 0; i < countries.size(); i++) {
+                    countriesName[i] = countries.get(i).getName();
+                    System.out.println("index of-"+i+" : "+countriesName[i]);
+                }
+                for (String countriesData : countriesName) {
+                    if (countriesName.length == 1){
+                        mCountries.setText(countriesData);
+                    } else {
+                        mCountries.append(countriesData + " | ");
+                    }
+                }
 
-//                List<MovieDetailModel.GenresData> genres = new ArrayList<>(response.body().getGenres());
-//                String[] genresName = new String[genres.size()];
-//                for (int j = 0; j <= genres.size(); j ++){
-//                    genresName[j] = genres.get(j).getName();
-//                }
-//                mGenre.setText(genresName.toString());
+                List<MovieDetailModel.GenresData> genres = new ArrayList<>(response.body().getGenres());
+                String[] genresName = new String[genres.size()];
+                for (int j = 0; j < genres.size(); j++) {
+                    genresName[j] = genres.get(j).getName();
+                    System.out.println("index of-"+j+" : "+genresName[j]);
+                }
+                for (String genreData : genresName) {
+                    if (genresName.length == 1){
+                        mGenre.setText(genreData);
+                    } else {
+                        mGenre.append(genreData + " | ");
+                    }
+                }
 
                 mHomePage.setText(response.body().getHomepage());
                 mReleased.setText(response.body().getStatus());
                 mReleasedDate.setText(response.body().getRelease_date());
 
-//                List<MovieDetailModel.ProductionCompanyData> companies = new ArrayList<>(response.body().getProduction_companies());
-//                String companiesName[] = new String[companies.size()];
-//                for (int k = 0; k <= companies.size(); k++){
-//                    companiesName[k] = companies.get(k).getName();
-//                }
-//                mCompaniesProduction.setText(companiesName.toString());
+                List<MovieDetailModel.ProductionCompanyData> companies = new ArrayList<>(response.body().getProduction_companies());
+                String companiesName[] = new String[companies.size()];
+                for (int k = 0; k < companies.size(); k++) {
+                    companiesName[k] = companies.get(k).getName();
+                    System.out.println("index of-"+k+" : "+companiesName[k]);
+                }
+                for (String companiesData : companiesName) {
+                    if (companiesName.length == 1){
+                        mCompaniesProduction.setText(companiesData);
+                    } else {
+                        mCompaniesProduction.append(companiesData + " | ");
+                    }
+                }
 
                 mReviewText.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -165,9 +186,9 @@ public class DetailActivity extends AppCompatActivity {
                 mTrailerText.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if (mRecyclerviewTrailer.getVisibility() == View.GONE){
+                        if (mRecyclerviewTrailer.getVisibility() == View.GONE) {
                             mRecyclerviewTrailer.setVisibility(View.VISIBLE);
-                        } else if (mRecyclerviewTrailer.getVisibility() == View.VISIBLE){
+                        } else if (mRecyclerviewTrailer.getVisibility() == View.VISIBLE) {
                             mRecyclerviewTrailer.setVisibility(View.GONE);
                         }
                     }
@@ -180,8 +201,10 @@ public class DetailActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<MovieDetailModel> call, Throwable t) {
-                mErrorLayout.setVisibility(View.VISIBLE);
+                mLoadContent.setVisibility(View.GONE);
                 mContentDetailMovie.setVisibility(View.GONE);
+
+                Toast.makeText(DetailActivity.this, R.string.error_message_connection, Toast.LENGTH_SHORT).show();
             }
         });
     }

@@ -60,7 +60,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
                 .placeholder(R.color.movie_poster_placeholder)
                 .into(holder.mItemMovieImage);
         holder.mTitleMovieTextView.setText(movie.get(position).getTitle());
-        holder.mGenreMovieTextView.setVisibility(View.GONE);
     }
 
     @Override
