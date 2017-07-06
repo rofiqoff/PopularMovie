@@ -9,7 +9,7 @@ import java.util.List;
 public class MovieDetailModel {
     private String adult;
     private String backdrop_path;
-    private String belongs_to_collection;
+//    private String belongs_to_collection;
     private String budget;
     private List<GenresData> genres;
     private String homepage;
@@ -49,13 +49,13 @@ public class MovieDetailModel {
         this.backdrop_path = backdrop_path;
     }
 
-    public String getBelongs_to_collection() {
-        return belongs_to_collection;
-    }
+//    public String getBelongs_to_collection() {
+//        return belongs_to_collection;
+//    }
 
-    public void setBelongs_to_collection(String belongs_to_collection) {
-        this.belongs_to_collection = belongs_to_collection;
-    }
+//    public void setBelongs_to_collection(String belongs_to_collection) {
+//        this.belongs_to_collection = belongs_to_collection;
+//    }
 
     public String getBudget() {
         return budget;

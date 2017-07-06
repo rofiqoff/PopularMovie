@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -205,6 +206,8 @@ public class DetailActivity extends AppCompatActivity {
                 mContentDetailMovie.setVisibility(View.GONE);
 
                 Toast.makeText(DetailActivity.this, R.string.error_message_connection, Toast.LENGTH_SHORT).show();
+
+                Log.e("Error : ", t.getMessage());
             }
         });
     }
