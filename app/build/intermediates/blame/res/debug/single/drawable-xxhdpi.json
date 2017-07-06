@@ -4,12 +4,12 @@
         "source": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_play_arrow.png"
     },
     {
-        "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/egg_empaty.png",
-        "source": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/res/drawable-xxhdpi/egg_empaty.png"
-    },
-    {
         "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_play_circle_outline.png",
         "source": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_play_circle_outline.png"
+    },
+    {
+        "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/egg_empaty.png",
+        "source": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/src/main/res/drawable-xxhdpi/egg_empaty.png"
     },
     {
         "merged": "/home/rofiqoff/AndroidStudioProjects/PopularMovie/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_favorite_border.png",
